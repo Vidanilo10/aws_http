@@ -9,8 +9,11 @@ Resources:
       CorsConfiguration:
         AllowMethods:
         - GET
+        - POST
+        - PUT
         AllowOrigins:
         - http://localhost:8080
+        - http://localhost:3000
   getAllItemsFunction:
     Type: AWS::Serverless::Function
     Properties:
